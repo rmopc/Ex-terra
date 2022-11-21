@@ -361,3 +361,21 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Temp
+/Library
+/Assets/_TerrainAutoUpgrade
+/Assets/_Creepy_Cat
+/Assets/UMotionExamples
+/Assets/UMotionEditor
+/Assets/TextMesh Pro
+/Assets/Starfield Skybox
+/Assets/Samples/Cinemachine/2.8.9/Cinemachine Example Scenes
+/Assets/Plugins/Pixel Crushers
+/Assets/MeshMaker
+/Assets/Import
+/Assets/Gizmos
+/Assets/Futuristic_soldier
+/Assets/Editor Default Resources/Dialogue System
+/Assets/EditedMeshes
+/Assets/Easy Character Movement
+/Assets/DiverseSpace
