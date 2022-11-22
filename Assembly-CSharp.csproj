@@ -72,6 +72,7 @@
     <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\CustomCharacterController.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\GroundHit.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\Launcher.cs" />
+    <Compile Include="Assets\Scripts\skyboxController.cs" />
     <Compile Include="Assets\Scripts\RayCastSend.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\10 - Wall Grab and Wall Jump\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Scripts\emissionChanger.cs" />
@@ -202,6 +203,10 @@
     <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\Data\GameData.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\DataPersistenceManager.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\IDataPersistence.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\FileDataHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MeshMaker\Frameworks\Shapes\Kite.xml" />

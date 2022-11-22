@@ -14,10 +14,16 @@ public class menuController : MonoBehaviour
 
     public void ResumeGame()
     {
+        Time.timeScale = 1f;
+        StartCoroutine(ResumeTimer());
+    }
+
+    IEnumerator ResumeTimer()
+    {
+        yield return new WaitForSeconds(0.50F);
         player.SetActive(true);
         gameObject.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        Time.timeScale = 1f;
     }
 }

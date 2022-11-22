@@ -28,7 +28,7 @@ public class menuClickListener : MonoBehaviour
     public void openMenu()
     {
         menu.SetActive(true);
-        player.SetActive(false);
+        //player.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0f;
