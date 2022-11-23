@@ -87,6 +87,7 @@
     <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseCharacterController.cs" />
     <Compile Include="Assets\PanelController.cs" />
     <Compile Include="Assets\Scripts\WindowLook.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\DataPersistenceManager.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseAgentController.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\RoverControler_A.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\_Infinity_Exemple_Scripts\Infinity_Example_Keys_01.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\_Infinity_Exemple_Scripts\Infinity_SwitchEngine_01.cs" />
     <Compile Include="Assets\Scripts\BaseInteractable.cs" />
     <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\Data\GameData.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\10 - Wall Grab and Wall Jump\Scripts\OneWayPlatform.cs" />
     <Compile Include="Assets\MeshMaker\Addons\First Person Drifter Controller\Scripts\FirstPersonDrifter.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\_Interactions_Scripts\Container_Open_Close.cs" />
@@ -110,6 +112,7 @@
     <Compile Include="Assets\Scripts\LevelChanger.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\12 - Swimming\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\SimpleElevator.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\IDataPersistence.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\LedFlash.cs" />
     <Compile Include="Assets\MeshMaker\Files\MeshEditor\Scripts\MeshEditorGizmos.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\RaycastGroundDetection.cs" />
@@ -132,6 +135,7 @@
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\ExampleHelpWindow.cs" />
     <Compile Include="Assets\ButtonClickController.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\6 - Fall Damage\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\FileDataHandler.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\ScrollTexture.cs" />
     <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\DemoController.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\11 - Flying\Scripts\MyCharacterController.cs" />
@@ -147,7 +151,7 @@
     <Compile Include="Assets\Easy Character Movement\Walkthrough\14 - Visualize walkable ground\Scripts\MeshAnalysis.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\BossCamera\CustomLockCameraY.cs" />
     <Compile Include="Assets\Scripts\simpleMouseLook.cs" />
-    <Compile Include="Assets\DoorLockController.cs" />
+    <Compile Include="Assets\Scripts\DoorLockController.cs" />
     <Compile Include="Assets\introMouseHandler.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\ShakeEvent.cs" />
@@ -203,10 +207,7 @@
     <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
-    <Compile Include="Assets\Scripts\Data Persistence\Data\GameData.cs" />
-    <Compile Include="Assets\Scripts\Data Persistence\DataPersistenceManager.cs" />
-    <Compile Include="Assets\Scripts\Data Persistence\IDataPersistence.cs" />
-    <Compile Include="Assets\Scripts\Data Persistence\FileDataHandler.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\SerializableTypes\SerializableDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MeshMaker\Frameworks\Shapes\Kite.xml" />
