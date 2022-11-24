@@ -86,6 +86,7 @@
     <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\GroundDetection.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseCharacterController.cs" />
     <Compile Include="Assets\PanelController.cs" />
+    <Compile Include="Assets\Scripts\Data Persistence\SerializableTypes\SerializableDictionary.cs" />
     <Compile Include="Assets\Scripts\WindowLook.cs" />
     <Compile Include="Assets\Scripts\Data Persistence\DataPersistenceManager.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseAgentController.cs" />
@@ -207,7 +208,7 @@
     <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
-    <Compile Include="Assets\Scripts\Data Persistence\SerializableTypes\SerializableDictionary.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MeshMaker\Frameworks\Shapes\Kite.xml" />
@@ -1108,6 +1109,10 @@
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
       <Project>{AA616FE4-506D-6D27-A714-84B75E41850C}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="lootlocker.lootlockersdk.runtime.csproj">
+      <Project>{1D5DF74A-22E0-9D5C-E910-EBEE14473E32}</Project>
+      <Name>lootlocker.lootlockersdk.runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using LootLocker.Requests;
+using System.IO;
 
 public class DataPersistenceManager : MonoBehaviour
 {
     [Header("File Storage Config")]
-    [SerializeField] private string fileName;
+    [SerializeField] public string fileName;
 
     private GameData gameData;
 
@@ -27,7 +29,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void Start()
     {
-        this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
+        this.dataHandler = new FileDataHandler("Assets/SavedGames/", fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
     }
@@ -39,7 +41,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void LoadGame()
     {
-
+        LoadFromLootLocker();
         this.gameData = dataHandler.Load();
 
         if (this.gameData == null)
@@ -62,6 +64,7 @@ public class DataPersistenceManager : MonoBehaviour
         }
 
         dataHandler.Save(gameData);
+        SaveToLootLocker();
     }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()
@@ -69,5 +72,35 @@ public class DataPersistenceManager : MonoBehaviour
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>(true).OfType<IDataPersistence>();
 
         return new List<IDataPersistence>(dataPersistenceObjects);
+    }
+
+    public void SaveToLootLocker()
+    {
+        LootLockerSDKManager.UploadPlayerFile("Assets/SavedGames/savedata.json", "save_game", response =>
+        {
+            if (response.success)
+            {
+                Debug.Log("Successfully uploaded player file, url: " + response.url);
+            }
+            else
+            {
+                Debug.Log("Error uploading player file");
+            }
+        });
+    }
+
+    public void LoadFromLootLocker()
+    {      
+        LootLockerSDKManager.GetAllPlayerFiles((response) =>
+        {            
+            if (response.success)
+            {                
+                Debug.Log("Successfully retrieved player files: " + response.items.Length);
+            }
+            else
+            {
+                Debug.Log("Error retrieving player storage");
+            }
+        });
     }
 }
