@@ -481,12 +481,12 @@ MonoBehaviour:
 
 
     This has lead to a mass-exodus, with humanity now in search
-    of a new home..
+    of new habitable planets.
 
 
 
     You are one of the lucky ones onboard the interstellar
-    starship Imperia, heading towards the planet Giese.'
+    starship Imperia, heading towards planet Giese.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -668,17 +668,17 @@ MonoBehaviour:
 
 
     This has lead to a mass-exodus, with humanity now in search
-    of a new home..
+    of new habitable planets.
 
 
 
     You are one of the lucky ones onboard the interstellar
-    starship Imperia, heading towards the planet Giese.
+    starship Imperia, heading towards planet Giese.
 
 
 
-    Your actions and decisions
-    may shape the destiny of everyone onboard...'
+    With the whole crew in
+    cryo-sleep, the years-long long journey continues...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12483,7 +12483,7 @@ MonoBehaviour:
 
 
     This has lead to a mass-exodus, with humanity now in search
-    of a new home..'
+    of new habitable planets.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Linq;
 using LootLocker.Requests;
 using System.IO;
+using UnityEngine.Networking;
+using Newtonsoft.Json.Linq;
 
 public class DataPersistenceManager : MonoBehaviour
 {
@@ -41,7 +43,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void LoadGame()
     {
-        LoadFromLootLocker();
+        //LoadFromLootLocker();
         this.gameData = dataHandler.Load();
 
         if (this.gameData == null)
@@ -76,7 +78,8 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void SaveToLootLocker()
     {
-        LootLockerSDKManager.UploadPlayerFile("Assets/SavedGames/savedata.json", "save_game", response =>
+        int playerFileId = 177366;
+        LootLockerSDKManager.UploadPlayerFile("Assets/SavedGames/savedata.json", "save_game1", response =>
         {
             if (response.success)
             {
@@ -90,17 +93,47 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     public void LoadFromLootLocker()
-    {      
-        LootLockerSDKManager.GetAllPlayerFiles((response) =>
-        {            
+    {
+        int id = 177366;
+        LootLockerSDKManager.GetPlayerFile(id, (response) =>
+        {
             if (response.success)
             {                
-                Debug.Log("Successfully retrieved player files: " + response.items.Length);
-            }
-            else
-            {
-                Debug.Log("Error retrieving player storage");
+                StartCoroutine(LoadRoutine(response.url));
             }
         });
+    }
+
+    IEnumerator LoadRoutine(string url)
+    {
+        string content = "";
+        bool gotData = false;
+        yield return Download(url, (data) =>
+        {
+            content = data;
+            gotData = true;
+        });
+        yield return new WaitWhile(() => gotData == false);        
+    }
+
+    IEnumerator Download(string url, System.Action<string> fileContent)
+    {
+        UnityWebRequest www = new UnityWebRequest(url);
+        www.downloadHandler = new DownloadHandlerBuffer();
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            // Show results as text
+            Debug.Log(www.downloadHandler.text);
+            fileContent(www.downloadHandler.text);
+
+            string savePath = string.Format("Assets/SavedGames/savedata.json");
+            System.IO.File.WriteAllText(savePath, www.downloadHandler.text);
+        }
     }
 }

@@ -56,47 +56,17 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Platforms\PlatformManager.cs">
-      <Link>Runtime\Game\Platforms\PlatformManager.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\AssetRequest.cs">
-      <Link>Runtime\Game\Requests\AssetRequest.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\LootLockerGameServerAPI.cs">
-      <Link>Runtime\Game\LootLockerGameServerAPI.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\LeaderboardRequest.cs">
-      <Link>Runtime\Game\Requests\LeaderboardRequest.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\PlayerRequest.cs">
-      <Link>Runtime\Game\Requests\PlayerRequest.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\ReportRequets.cs">
-      <Link>Runtime\Game\Requests\ReportRequets.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\MessagesRequest.cs">
-      <Link>Runtime\Game\Requests\MessagesRequest.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\MapsRequest.cs">
-      <Link>Runtime\Game\Requests\MapsRequest.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\MissionsRequest.cs">
-      <Link>Runtime\Game\Requests\MissionsRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\UserGeneratedContentRequest.cs">
+      <Link>Runtime\Game\Requests\UserGeneratedContentRequest.cs</Link>
     </Compile>
     <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\CharacterRequest.cs">
       <Link>Runtime\Game\Requests\CharacterRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\LootLockerBaseServerAPI.cs">
-      <Link>Runtime\Client\LootLockerBaseServerAPI.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\MessagesRequest.cs">
+      <Link>Runtime\Game\Requests\MessagesRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Editor\ProjectSettings.cs">
-      <Link>Runtime\Editor\ProjectSettings.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\CrashesRequest.cs">
-      <Link>Runtime\Game\Requests\CrashesRequest.cs</Link>
-    </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\LootLockerServerRequest.cs">
-      <Link>Runtime\Client\LootLockerServerRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\LootLockerGameServerAPI.cs">
+      <Link>Runtime\Game\LootLockerGameServerAPI.cs</Link>
     </Compile>
     <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\MiscRequests.cs">
       <Link>Runtime\Game\Requests\MiscRequests.cs</Link>
@@ -104,8 +74,38 @@
     <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\LootLockerSDKManager.cs">
       <Link>Runtime\Game\LootLockerSDKManager.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\LootLockerSessionRequest.cs">
-      <Link>Runtime\Game\Requests\LootLockerSessionRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\PersitentPlayerStorageRequest.cs">
+      <Link>Runtime\Game\Requests\PersitentPlayerStorageRequest.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\LootLockerConfig.cs">
+      <Link>Runtime\Client\LootLockerConfig.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\WhiteLabelRequest.cs">
+      <Link>Runtime\Game\Requests\WhiteLabelRequest.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\LootLockerServerRequest.cs">
+      <Link>Runtime\Client\LootLockerServerRequest.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\PurchaseRequest.cs">
+      <Link>Runtime\Game\Requests\PurchaseRequest.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Platforms\PlatformManager.cs">
+      <Link>Runtime\Game\Platforms\PlatformManager.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\LootLockerServerManager.cs">
+      <Link>Runtime\Game\LootLockerServerManager.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\LootLockerVerifyRequest.cs">
+      <Link>Runtime\Game\Requests\LootLockerVerifyRequest.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\LootLockerValidation.cs">
+      <Link>Runtime\Game\LootLockerValidation.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\AssetInstanceRequest.cs">
+      <Link>Runtime\Game\Requests\AssetInstanceRequest.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\AssetRequest.cs">
+      <Link>Runtime\Game\Requests\AssetRequest.cs</Link>
     </Compile>
     <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\LootLockerEndPoints.cs">
       <Link>Runtime\Client\LootLockerEndPoints.cs</Link>
@@ -113,47 +113,47 @@
     <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\EndPointClass.cs">
       <Link>Runtime\Client\EndPointClass.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\TriggerEventsRequest.cs">
-      <Link>Runtime\Game\Requests\TriggerEventsRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\GetRequests.cs">
+      <Link>Runtime\Client\GetRequests.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\WhiteLabelRequest.cs">
-      <Link>Runtime\Game\Requests\WhiteLabelRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\LootLockerBaseServerAPI.cs">
+      <Link>Runtime\Client\LootLockerBaseServerAPI.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\CollectableRequest.cs">
-      <Link>Runtime\Game\Requests\CollectableRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Editor\ProjectSettings.cs">
+      <Link>Runtime\Editor\ProjectSettings.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\UserGeneratedContentRequest.cs">
-      <Link>Runtime\Game\Requests\UserGeneratedContentRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\PlayerRequest.cs">
+      <Link>Runtime\Game\Requests\PlayerRequest.cs</Link>
     </Compile>
     <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\EventRequest.cs">
       <Link>Runtime\Game\Requests\EventRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\LootLockerServerManager.cs">
-      <Link>Runtime\Game\LootLockerServerManager.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\LootLockerSessionRequest.cs">
+      <Link>Runtime\Game\Requests\LootLockerSessionRequest.cs</Link>
     </Compile>
     <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\DropTableRequest.cs">
       <Link>Runtime\Game\Requests\DropTableRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\PersitentPlayerStorageRequest.cs">
-      <Link>Runtime\Game\Requests\PersitentPlayerStorageRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\ReportRequets.cs">
+      <Link>Runtime\Game\Requests\ReportRequets.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\LootLockerValidation.cs">
-      <Link>Runtime\Game\LootLockerValidation.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\TriggerEventsRequest.cs">
+      <Link>Runtime\Game\Requests\TriggerEventsRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\GetRequests.cs">
-      <Link>Runtime\Client\GetRequests.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\CrashesRequest.cs">
+      <Link>Runtime\Game\Requests\CrashesRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\LootLockerVerifyRequest.cs">
-      <Link>Runtime\Game\Requests\LootLockerVerifyRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\MapsRequest.cs">
+      <Link>Runtime\Game\Requests\MapsRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Client\LootLockerConfig.cs">
-      <Link>Runtime\Client\LootLockerConfig.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\LeaderboardRequest.cs">
+      <Link>Runtime\Game\Requests\LeaderboardRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\AssetInstanceRequest.cs">
-      <Link>Runtime\Game\Requests\AssetInstanceRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\MissionsRequest.cs">
+      <Link>Runtime\Game\Requests\MissionsRequest.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\PurchaseRequest.cs">
-      <Link>Runtime\Game\Requests\PurchaseRequest.cs</Link>
+    <Compile Include="C:\Users\ronie\Downloads\unity-sdk-main\unity-sdk-main\Runtime\Game\Requests\CollectableRequest.cs">
+      <Link>Runtime\Game\Requests\CollectableRequest.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

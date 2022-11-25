@@ -992,6 +992,10 @@
       <Project>{F9B4E376-8680-4964-3BDA-796B0C7C2BAA}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
+    <ProjectReference Include="lootlocker.lootlockersdk.runtime.csproj">
+      <Project>{1D5DF74A-22E0-9D5C-E910-EBEE14473E32}</Project>
+      <Name>lootlocker.lootlockersdk.runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{7A0B9630-50AF-A06B-2656-62C3C0133C7C}</Project>
       <Name>Unity.TextMeshPro</Name>
@@ -1063,10 +1067,6 @@
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
       <Project>{AA616FE4-506D-6D27-A714-84B75E41850C}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="lootlocker.lootlockersdk.runtime.csproj">
-      <Project>{1D5DF74A-22E0-9D5C-E910-EBEE14473E32}</Project>
-      <Name>lootlocker.lootlockersdk.runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
