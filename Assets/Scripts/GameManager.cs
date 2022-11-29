@@ -7,9 +7,13 @@ public class GameManager : MonoBehaviour
 {
 
     public bool sessionStarted;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
     void Start()
     {
-
         sessionStarted = false;
         LootLockerSDKManager.StartGuestSession((response) =>
         {

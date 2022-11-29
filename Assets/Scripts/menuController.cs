@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menuController : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class menuController : MonoBehaviour
     {
         Time.timeScale = 1f;
         StartCoroutine(ResumeTimer());
+    }
+
+    public void BackToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
     }
 
     IEnumerator ResumeTimer()

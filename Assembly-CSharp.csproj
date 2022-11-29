@@ -74,6 +74,7 @@
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\Launcher.cs" />
     <Compile Include="Assets\Scripts\skyboxController.cs" />
     <Compile Include="Assets\Scripts\RayCastSend.cs" />
+    <Compile Include="Assets\Scripts\audioFader.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\10 - Wall Grab and Wall Jump\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Scripts\emissionChanger.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Models\UnityCharacter\Scripts\CharacterMovement2D.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\PanelController.cs" />
     <Compile Include="Assets\Scripts\Data Persistence\SerializableTypes\SerializableDictionary.cs" />
     <Compile Include="Assets\Scripts\WindowLook.cs" />
+    <Compile Include="Assets\Scripts\pointerHandler.cs" />
     <Compile Include="Assets\Scripts\Data Persistence\DataPersistenceManager.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseAgentController.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\RoverControler_A.cs" />
@@ -210,8 +212,7 @@
     <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
-    <Compile Include="Assets\Scripts\pointerHandler.cs" />
-    <Compile Include="Assets\Scripts\audioFader.cs" />
+    <Compile Include="Assets\Scripts\loadGameInit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MeshMaker\Frameworks\Shapes\Kite.xml" />
