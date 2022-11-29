@@ -6,6 +6,7 @@ using LootLocker.Requests;
 using System.IO;
 using UnityEngine.Networking;
 using Newtonsoft.Json.Linq;
+using System.Threading.Tasks;
 
 public class DataPersistenceManager : MonoBehaviour
 {
@@ -13,10 +14,13 @@ public class DataPersistenceManager : MonoBehaviour
     [SerializeField] public string fileName;
 
     private GameData gameData;
+    private int latestId;
 
     private List<IDataPersistence> dataPersistenceObjects;
 
     private FileDataHandler dataHandler;
+
+    public menuClickListener mcl;
 
     public static DataPersistenceManager instance { get; private set; }
 
@@ -30,7 +34,7 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     private void Start()
-    {
+    {        
         this.dataHandler = new FileDataHandler("Assets/SavedGames/", fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
@@ -42,8 +46,7 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     public void LoadGame()
-    {
-        //LoadFromLootLocker();
+    {        
         this.gameData = dataHandler.Load();
 
         if (this.gameData == null)
@@ -77,8 +80,7 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     public void SaveToLootLocker()
-    {
-        int playerFileId = 177366;
+    {        
         LootLockerSDKManager.UploadPlayerFile("Assets/SavedGames/savedata.json", "save_game1", response =>
         {
             if (response.success)
@@ -92,16 +94,43 @@ public class DataPersistenceManager : MonoBehaviour
         });
     }
 
-    public void LoadFromLootLocker()
+    public async void LoadFromLootLocker()
     {
-        int id = 177366;
+        LootLockerSDKManager.GetAllPlayerFiles((response) =>
+        {
+            if (response.success)
+            {
+                Debug.Log("Successfully retrieved player files: " + response.items.Length);
+            }
+            else
+            {
+                Debug.Log("Error retrieving player storage");
+            }
+
+            var playerFiles = response.items;
+            latestId = (from item in playerFiles select item.id).LastOrDefault(); 
+        });
+        await Wait();
+
+        int id = latestId;
         LootLockerSDKManager.GetPlayerFile(id, (response) =>
         {
             if (response.success)
-            {                
+            {
                 StartCoroutine(LoadRoutine(response.url));
             }
         });
+
+        await Wait();
+        LoadGame();
+
+        await Wait();
+        mcl.closeMenu();
+    }
+
+    private Task Wait()
+    {
+        return Task.Delay(500);
     }
 
     IEnumerator LoadRoutine(string url)

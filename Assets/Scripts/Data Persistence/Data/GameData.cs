@@ -8,7 +8,6 @@ public class GameData
     public Vector3 playerPos;
     public SerializableDictionary<string, bool> lockedState;
 
-
     public GameData()
     {
         playerPos = Vector3.zero;

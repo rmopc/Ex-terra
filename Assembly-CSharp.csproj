@@ -164,6 +164,7 @@
     <Compile Include="Assets\_Creepy_Cat\_3D Scifi Kit Vol 3\Prefabs\Fx\Laser\_Scripts\TurretLookAt.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\CameraMagnets\CameraMagnetProperty.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Components\CharacterMovement.cs" />
+    <Compile Include="Assets\Scripts\mainMenuController.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\ObjectFacingCamera.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\15 - Ladder Climbing\Scripts\Ladder.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\13 - Over The Shoulder Camera Movement\Scripts\MyCharacterController.cs" />
@@ -209,6 +210,8 @@
     <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
+    <Compile Include="Assets\Scripts\pointerHandler.cs" />
+    <Compile Include="Assets\Scripts\audioFader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MeshMaker\Frameworks\Shapes\Kite.xml" />

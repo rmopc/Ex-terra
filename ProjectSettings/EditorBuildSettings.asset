@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/_Ronie Cutscene.unity
+    path: Assets/Scenes/Main Menu.unity
+    guid: a2ec9b317308df745b91f60b606236f0
+  - enabled: 1
+    path: Assets/Scenes/Intro Cinematic.unity
     guid: a11fa8abbff98f9459cbc9e7a482e3a5
   - enabled: 1
-    path: Assets/Scenes/_Ronie Playground.unity
+    path: Assets/Scenes/Level 1, new game.unity
     guid: d0a901c5a14c2894a94594f27fc5ebe2
+  - enabled: 1
+    path: Assets/Scenes/Level 1, loaded game.unity
+    guid: 57e8672c849cd994c99b2f49fcacd1c9
   m_configObjects: {}

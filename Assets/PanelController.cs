@@ -9,7 +9,7 @@ public class PanelController : MonoBehaviour
     private bool panelIsUsable = true;
 
     public GameObject player;
-    public Camera panelCamera;
+    public GameObject panelCamera;
     public GameObject objectToUnlock;
     public GameObject buttons;
     public bool usingPanel = false;
@@ -19,14 +19,14 @@ public class PanelController : MonoBehaviour
     void Start()
     {
         buttons.SetActive(false);
-        panelCamera.enabled = false;
+        panelCamera.SetActive(false);
     }
 
     void Update()
     {
         if (usedOnce == false && objectToUnlock.GetComponent<DoorLockController>().isLocked == false)
         {
-            panelCamera.enabled = false;
+            panelCamera.SetActive(false);
             usingPanel = false;            
             player.SetActive(true);
             usedOnce = true;
@@ -37,7 +37,7 @@ public class PanelController : MonoBehaviour
 
         if (usingPanel == true && Input.GetKeyDown(KeyCode.E))
         {
-            panelCamera.enabled = false;
+            panelCamera.SetActive(false);
             usingPanel = false;            
             player.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
@@ -63,7 +63,7 @@ public class PanelController : MonoBehaviour
         if (panelIsUsable == true && objectToUnlock.GetComponent<DoorLockController>().isLocked == true) // HUOM! Script ei toimi jos ovea ei ole lukittu inspectorissa tai muulla tavoin!
         {
             buttons.SetActive(true);
-            panelCamera.enabled = true;            
+            panelCamera.SetActive(true);
             usingPanel = true;
             player.SetActive(false);
             Cursor.lockState = CursorLockMode.None;

@@ -12,7 +12,7 @@ public class ShakeEvent : MonoBehaviour
     private Light[] lights;
     public Material lightEmission;
 
-    private bool hasHappened;
+    public bool hasHappened;
     private AudioSource audioSource;
 
     public float duration;
