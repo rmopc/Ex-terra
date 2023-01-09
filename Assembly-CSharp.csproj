@@ -96,6 +96,7 @@
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\_Infinity_Exemple_Scripts\Infinity_Example_Keys_01.cs" />
     <Compile Include="Assets\MeshMaker\Addons\First Person Drifter Controller\Scripts\MouseLook.cs" />
     <Compile Include="Assets\_Creepy_Cat\Common Scripts\_Infinity_Exemple_Scripts\Infinity_SwitchEngine_01.cs" />
+    <Compile Include="Assets\Scripts\loadGameInit.cs" />
     <Compile Include="Assets\Scripts\BaseInteractable.cs" />
     <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\Scripts\Data Persistence\Data\GameData.cs" />
@@ -212,7 +213,6 @@
     <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
-    <Compile Include="Assets\Scripts\loadGameInit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MeshMaker\Frameworks\Shapes\Kite.xml" />
