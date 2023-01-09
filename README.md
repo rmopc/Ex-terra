@@ -4,9 +4,9 @@ Made in Unity, as part of my education I demonstrated my skills in game-developm
 
 
 <img src="https://github.com/rmopc/Ex-terra/blob/master/Media/title.png">
-<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/mainmenu.png" width=50% height=50%>
-<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/intro.png" width=50% height=50%>
-<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/cryoroom.png" width=50% height=50%>
-<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/android_interact.png" width=50% height=50%>
-<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/engineering.png" width=50% height=50%>
-<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/command_deck.png" width=50% height=50%>
+<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/mainmenu.png">
+<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/intro.png" >
+<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/cryoroom.png">
+<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/android_interact.png">
+<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/engineering.png">
+<img src="https://github.com/rmopc/Ex-terra/blob/master/Media/command_deck.png">
